@@ -8,8 +8,8 @@ const port = process.env.PORT || 8080;
 corsProxy.createServer({
     originWhitelist: [
         'http://localhost:3000',
-        'https://weather-app-one-lake.vercel.app/', 
-        'https://smart-points-kappa.vercel.app/'
+        'https://weather-app-one-lake.vercel.app', 
+        'https://smart-points-kappa.vercel.app'
     ],
     requireHeader: ['origin', 'x-requested-with'],
     removeHeaders: ['cookie', 'cookie2']

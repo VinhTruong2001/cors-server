@@ -6,7 +6,11 @@ const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT || 8080;
 
 corsProxy.createServer({
-    originWhitelist: ['http://localhost:3000', 'http://localhost:3000/dashboard/settings', 'https://portfolio-ravenous.herokuapp.com'],
+    originWhitelist: [
+        'http://localhost:3000',
+        'https://weather-app-one-lake.vercel.app/', 
+        'https://smart-points-kappa.vercel.app/'
+    ],
     requireHeader: ['origin', 'x-requested-with'],
     removeHeaders: ['cookie', 'cookie2']
 }).listen(port, host, () => {

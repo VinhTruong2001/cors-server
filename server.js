@@ -10,6 +10,7 @@ corsProxy.createServer({
         'http://localhost:3000',
         'https://weather-app-one-lake.vercel.app', 
         'https://smart-points-kappa.vercel.app'
+        'https://devapi.futurefund.ventures/'
     ],
     requireHeader: ['origin', 'x-requested-with'],
     removeHeaders: ['cookie', 'cookie2']
